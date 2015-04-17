@@ -1,2 +1,2 @@
 # Go-CRUD-App
-This is a very basic Go application that consumes an api and has CRUD functionality
+This is a very basic Go application built with Martini that consumes an api and has CRUD functionality
