@@ -19,6 +19,7 @@ type Student struct {
 
 
 const ApiRoot = "http://djholt.php.cs.dixie.edu/slim-example/index.php"
+// const ApiRoot = "http://localhost:8888/slim_example/index.php"
 
 func makeGetRequest(url string) []byte {
   // get url
@@ -153,7 +154,7 @@ func main() {
   })
 
   m.Get("/test", func() []byte {
-    data := makeGetRequest("http://djholt.php.cs.dixie.edu/slim-example/index.php/students/json")
+    data := makeGetRequest("/students/json")
     return data
   })
   
